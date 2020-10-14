@@ -16,12 +16,19 @@ function startVideo() {
 button.addEventListener('click', () => startVideo());
 // setTimeout(() => startVideo(), 3000);
 
-video.addEventListener('ended', (event) => {
+video.addEventListener('ended', e => {
     console.log('Video stopped either because 1) it was over, ' + 'or 2) no further data is available.');
     console.log(event.target.currentTime);
-    event.target.currentTime = 3;
-    event.target.muted = false;
-    event.target.play();
+    e.target.currentTime = 3;
+    e.target.muted = false;
+    e.target.play();
+});
+
+video.addEventListener('click', e => {
+    e.target.pause();
+    e.target.currentTime = 0;
+    video_container.style.visibility = 'hidden';
+    desktop.style.visibility = 'visible';
 });
 
 function resize() {
