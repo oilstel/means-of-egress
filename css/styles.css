@@ -40,8 +40,8 @@ body {
     outline: none;
     /* width: 20.7vw;
     /* height: 20.7vw; */
-    margin-top: -16px;
-    margin-left: -12px;
+    margin-top: .8px;
+    margin-left: 2px;
     cursor: pointer;
 }
 .desktop button:hover {
