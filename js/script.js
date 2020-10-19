@@ -97,8 +97,8 @@ window.onresize = resize;
 // });
 
 button.addEventListener('mouseover', e => {
-  desktop.style.backgroundImage = 'url(../assets/images/bgmergedhover.png)';
+  desktop.style.backgroundImage = 'url(assets/images/bgmergedhover.png)';
 });
 button.addEventListener('mouseout', e => {
-  desktop.style.backgroundImage = 'url(../assets/images/bgmerged.png)';
+  desktop.style.backgroundImage = 'url(assets/images/bgmerged.png)';
 });
