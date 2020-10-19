@@ -41,9 +41,9 @@ function resize() {
     // }
 
     button.style.top = desktop.clientHeight / 3.1 + 'px';
-    button.style.left = desktop.clientWidth / 5.4 + 'px';
+    button.style.left = desktop.clientWidth / 3.8 + 'px';
 
-    button.style.width = desktop.clientWidth / 2.7 + 'px';
+    button.style.width = desktop.clientWidth / 4.5 + 'px';
     button.style.height = desktop.clientHeight / 2.7 + 'px';
     // console.log('w: ' + window.innerWidth);
     // console.log('h: ' + window.innerHeight);
@@ -63,3 +63,42 @@ window.onresize = resize;
 //     desktop.style.height = window.innerHeight / 2 + 'px';
 //     console.log(desktop.style.width);
 // }
+
+
+// Preloader
+
+// function preloadImages(urls, allImagesLoadedCallback){
+//   var loadedCounter = 0;
+//   var toBeLoadedNumber = urls.length;
+//   urls.forEach(function(url){
+//     preloadImage(url, function(){
+//         loadedCounter++;
+//             console.log('Number of loaded images: ' + loadedCounter);
+//       if(loadedCounter == toBeLoadedNumber){
+//         allImagesLoadedCallback();
+//       }
+//     });
+//   });
+//   function preloadImage(url, anImageLoadedCallback){
+//       var img = new Image();
+//       img.onload = anImageLoadedCallback;
+//       img.src = url;
+//   }
+// }
+
+// // Let's call it:
+// preloadImages([
+//   '../assets/images/bgmerged.png',
+//   '../assets/images/bgmergedhover.png'
+// ], function(){
+//   console.log('All images were loaded');
+//   desktop.style.visibility = 'visible';
+//   desktop.style.backgroundImage = 'url(../assets/images/bgmerged.png)';
+// });
+
+button.addEventListener('mouseover', e => {
+  desktop.style.backgroundImage = 'url(../assets/images/bgmergedhover.png)';
+});
+button.addEventListener('mouseout', e => {
+  desktop.style.backgroundImage = 'url(../assets/images/bgmerged.png)';
+});
