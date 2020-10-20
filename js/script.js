@@ -40,11 +40,11 @@ function resize() {
     //     desktop.style.height = window.innerHeight + 'px';
     // }
 
-    button.style.top = desktop.clientHeight / 3.1 + 'px';
-    button.style.left = desktop.clientWidth / 3.8 + 'px';
+    // button.style.top = desktop.clientHeight / 3.1 + 'px';
+    // button.style.left = desktop.clientWidth / 3.8 + 'px';
 
-    button.style.width = desktop.clientWidth / 4.5 + 'px';
-    button.style.height = desktop.clientHeight / 2.7 + 'px';
+    // button.style.width = desktop.clientWidth / 4.5 + 'px';
+    // button.style.height = desktop.clientHeight / 2.7 + 'px';
     // console.log('w: ' + window.innerWidth);
     // console.log('h: ' + window.innerHeight);
 

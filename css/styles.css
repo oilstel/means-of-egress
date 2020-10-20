@@ -15,11 +15,11 @@ body {
 .desktop {
     background-image: url('../assets/images/bgmerged.png');
     background-size: contain;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    /* width: 100vw; */
-    max-width: calc(100vh * 1.8 - 15px);
-    height: calc(100vw - 43.7vw);
+    width: 100vw;
+    /* max-width: calc(100vh * 1.8 - 15px);
+    height: calc(100vw - 43.7vw); */
     position: fixed;
     background-color: #000000;
     max-height: 100vh;
@@ -39,8 +39,10 @@ body {
     -moz-appearance: none;
     -webkit-appearance: none;
     outline: none;
-    margin-top: .8px;
-    margin-left: 2px;
+    width: 20vw;
+    height: 19vw;
+    top: 19.5vw;
+    left: 27.3vw;
     cursor: default;
 }
 /* .desktop button:hover {
