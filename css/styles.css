@@ -17,12 +17,13 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    /* width: 100vw; */
     max-width: calc(100vh * 1.8 - 15px);
     height: calc(100vw - 43.7vw);
     position: fixed;
     background-color: #000000;
     max-height: 100vh;
+    top: 0;
 }
 .desktop:before {
   content: url('../assets/images/bgmergedhover.png');
@@ -40,7 +41,7 @@ body {
     outline: none;
     margin-top: .8px;
     margin-left: 2px;
-    cursor: pointer;
+    cursor: default;
 }
 /* .desktop button:hover {
     background-image: url('../assets/images/icon-hover.png');
