@@ -14,7 +14,6 @@ button.addEventListener('click', () => startVideo());
 
 // Loop when video ends
 video.addEventListener('ended', e => {
-  console.log(event.target.currentTime);
   e.target.currentTime = 3;
   e.target.muted = false;
   e.target.play();
