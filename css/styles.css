@@ -24,6 +24,7 @@ body {
     background-color: #000000;
     max-height: 100vh;
     top: 0;
+    bottom: 0;
 }
 .desktop:before {
   content: url('../assets/images/bgmergedhover.png');
